@@ -1,0 +1,20 @@
+    4  vi admin.rc
+    5  cat admin.rc 
+    6  source admin.rc 
+   11  openstack project list
+   13  openstack help project
+   14  openstack help project delete
+   15  openstack project delete c36ce862cc2f443c87a689836ae950c3
+   16  openstack project create --description "New project" new-project
+   17  openstack user list
+   18  openstack user create --project new-project --password openstack new-user
+   19  openstack user list
+   20  openstack role list
+   21  openstack role create myrole
+   22  openstack role list
+   23  openstack project list
+   24  openstack role add --user new-user --project 216ce871284a450f8249f62f2ad42b27 myrole
+   25  openstack role list --user new-user --project 216ce871284a450f8249f62f2ad42b27
+   26  openstack role show
+   27  openstack role show myrole
+   28  history 
